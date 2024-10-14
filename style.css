@@ -1,0 +1,197 @@
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main container to take up full height */
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navigation */
+#nav {
+    height: 100px; /* Fixed height for navigation */
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 15px 30px;
+    align-items: center;
+}
+#nav h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+#nav i {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+/* Content area */
+#center {
+    margin: -70px 0px ;
+    flex-grow: 1; /* Make #center fill remaining space */
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+#center h1 {
+    font-size: 4vw; /* Reduced font size for better fit */
+    font-weight: 500;
+    line-height: 4.8vw;
+}
+#center-in {
+    margin-top: 30px; /* Adjusted margin for better spacing */
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p {
+    /* font-size: 18px; */
+    font-size: 1.1vw; /* Reduced font size for better fit */
+    font-weight: 600;
+    line-height: 1.7vw;
+}
+#right {
+    width: 20%;
+}
+
+/* Product Links */
+.elem {
+    margin: 10px 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    border-top: 1px solid black; /* Thinner border */
+}
+.elem a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+.elem i {
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem:hover i {
+    opacity: 1;
+}
+.elem:hover a {
+    text-decoration: underline;
+}
+
+/* Bottom section */
+#bottom {
+    height: 40%; /* Increase height for better visibility */
+    width: 100%;
+    margin-top:50px ;
+    background-image: url(https://images.unsplash.com/photo-1529739121416-921f4dae728e?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position:0 45%; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+@media (max-width:600px) {
+    #nav {
+        height: 60px;
+     
+        gap: 20px;
+        padding: 0px 20px;
+       
+    }
+    #nav h4 {
+        font-size: 12px;
+        font-weight: 600;
+        /* display: none; */
+    }
+    #nav i {
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        font-size: 6px;
+        padding: 7px;
+        font-weight: 500;
+    }
+    /* Content area */
+#center {
+    margin: 10px 0px ;
+    flex-grow: 1; /* Make #center fill remaining space */
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+#center h1 {
+    font-size: 10vw; /* Reduced font size for better fit */
+    font-weight: 500;
+    line-height: 10.6vw;
+}
+#center-in {
+    margin-top: 25px; 
+    gap: 50px;/* Adjusted margin for better spacing */
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between;
+}
+#center-in p {
+    /* font-size: 18px; */
+    font-size: 3vw; /* Reduced font size for better fit */
+    font-weight: 600;
+    line-height: 4vw;
+}
+#right {
+    width: 100%;
+}
+
+/* Product Links */
+.elem {
+    margin: 6px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Adjust padding as needed */
+    border-top: 1.5px solid #303030; /* Thinner border */
+}
+.elem a {
+    color: #303030;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+}
+.elem i {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 1;
+    color: #303030;
+}
+
+#bottom {
+    height: 60%; /* Increase height for better visibility */
+    width: 100%;
+    margin-top:10px ;
+    background-image: url(https://images.unsplash.com/photo-1529739121416-921f4dae728e?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position:0 45%; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+}
+
+}
